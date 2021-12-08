@@ -1,0 +1,123 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$bgColor: #3e4154;
+$textColor: #ffffff;
+$primaryColor: #31e1d6;
+$secondaryColor: #23a9f4;
+
+body {
+  background-color: $bgColor;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+  //   background-color: red;
+  .menu {
+    display: grid;
+    grid-template-areas:
+      "brand nav nav"
+      "content content content";
+    align-items: center;
+    .brand {
+      grid-area: brand;
+      display: flex;
+      img {
+        width: 70px;
+      }
+      span {
+        font-family: "Poppins";
+        align-self: center;
+        padding: 7px 15px;
+        background-color: $primaryColor;
+        border-radius: 0 50px 50px 0;
+        margin-left: 30px;
+        position: relative;
+        font-size: 1.2em;
+        font-weight: 500;
+        color: $bgColor;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        // display: none;
+      }
+      span::before {
+        content: "";
+        border-top: 43px solid $bgColor;
+        border-right: 25px solid $primaryColor;
+        position: absolute;
+        top: 0;
+        left: -25px;
+      }
+    }
+    .menu-list {
+      grid-area: nav;
+      padding: 0;
+      display: flex;
+      justify-content: end;
+      li {
+        padding: 0 30px;
+        list-style: none;
+        display: inline-block;
+        a {
+          color: #31e1d6;
+          text-decoration: none;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .hero-text {
+      margin-top: 20%;
+      grid-area: content;
+      h1 {
+        font-family: "Poppins";
+        color: $secondaryColor;
+        text-align: center;
+        font-size: calc(1vw + 3rem);
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        margin: 0;
+      }
+      p {
+        font-family: "Poppins";
+        color: $textColor;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        font-size: calc(0.5vw + 0.7rem);
+        span {
+          border-radius: 50px;
+          padding: 3px 10px;
+        }
+        span:nth-child(1) {
+          background-color: $secondaryColor;
+        }
+        span:nth-child(2) {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .brand span {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 98%;
+  }
+  #menu-list {
+    li {
+      padding: 0 20px;
+    }
+  }
+  #brand {
+    justify-content: center;
+  }
+}
