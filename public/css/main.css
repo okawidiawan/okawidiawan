@@ -15,15 +15,17 @@ body {
 .container .menu {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "brand nav nav" "content content content";
+  grid-template-areas:
+    "brand nav nav"
+    "content content content";
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container .menu .brand {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: brand;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,8 +39,8 @@ body {
 .container .menu .brand span {
   font-family: "Poppins";
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   padding: 7px 15px;
   background-color: #31e1d6;
   border-radius: 0 50px 50px 0;
@@ -61,17 +63,17 @@ body {
 }
 
 .container .menu .menu-list {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  grid-row: 1;
+  grid-column: 2;
+  /* grid-column-span: 2; */
   grid-area: nav;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 .container .menu .menu-list li {
@@ -88,9 +90,9 @@ body {
 
 .container .menu .hero-text {
   margin-top: 20%;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  grid-row: 2;
+  grid-column: 1;
+  /* grid-column-span: 3; */
   grid-area: content;
 }
 
@@ -141,8 +143,8 @@ body {
   }
   #brand {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
