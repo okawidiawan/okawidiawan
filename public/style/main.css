@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #3e4154;
+  background-color: #181818;
 }
 
 header {
@@ -21,17 +21,19 @@ header {
 }
 
 header .container {
-  margin-top: 15px;
-  width: 90%;
+  margin-top: 30px;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 30px 90vh;
       grid-template-rows: 30px 90vh;
+  justify-items: center;
 }
 
 header .container nav {
+  width: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 40px;
@@ -79,14 +81,32 @@ header .container nav {
   border-radius: 50px;
   margin: 4px;
   background-color: #d1d9e6;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu-toggle span:nth-child(1) {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 25px;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.menu-toggle span:nth-child(2) {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.menu-toggle .rotate-1 {
+  width: 35px !important;
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+          transform: translateY(-5px) rotate(-45deg);
+}
+
+.menu-toggle .rotate-2 {
+  -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
 }
 
 main {
@@ -116,11 +136,12 @@ main h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-bottom: 1rem;
 }
 
 main h3 {
   font-family: "Quicksand";
-  font-size: calc(0.5vw + 0.8rem);
+  font-size: calc(0.5vw + 1rem);
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #d1d9e6;
@@ -133,7 +154,10 @@ main h3 {
 }
 
 main h3 span:nth-child(1) {
-  color: #23a9f4;
+  color: #d1d9e6;
+  background-color: #23a9f4;
+  border-radius: 100px;
+  padding: 1px 10px;
 }
 
 main h3 span:nth-child(2) {
@@ -166,5 +190,9 @@ main .navlinks .navlink a {
   color: #d1d9e6;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+main .navlinks .navlink a:hover {
+  color: #31e1d6;
 }
 /*# sourceMappingURL=main.css.map */
