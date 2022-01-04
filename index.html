@@ -26,35 +26,40 @@
             <span></span>
             <span></span>
           </div>
+
+          <ul class="navigation">
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
         </nav>
-        <main>
+
+        <main class="">
           <h1>Hello</h1>
           <h3>I'm <span>Oka Widiawan</span> a <span>Frontend</span> Web Developer</h3>
           <ul class="navlinks">
             <li class="navlink">
-              <a href="https://github.com/okawidiawan"><i class="bi bi-git"></i></a>
+              <a href="https://github.com/okawidiawan" target="_blank"><i class="bi bi-git"></i></a>
               <!-- <p>Github</p> -->
             </li>
             <li class="navlink">
-              <a href="mailto:oka.widiawan@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+              <a href="mailto:oka.widiawan@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
               <!-- <p>Email</p> -->
             </li>
             <li class="navlink">
-              <a href="https://api.whatsapp.com/send?phone=6285692598452"><i class="bi bi-phone-fill"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=6285692598452" target="_blank"><i class="bi bi-phone-fill"></i></a>
               <!-- <p>Whatsapp</p> -->
             </li>
           </ul>
         </main>
+
+        <section id="about" class="about hidden">test</section>
       </div>
     </header>
-    <script>
-      const menuToogle = document.querySelector(".menu-toggle");
-      menuToogle.addEventListener("click", () => {
-        const closeToggle = document.querySelectorAll(".menu-toggle span");
-        closeToggle.forEach((element, index) => {
-          element.classList.toggle(`rotate-${index + 1}`);
-        });
-      });
+    <script type="module">
+      import { close } from "./public/script/index.js";
+      close();
     </script>
   </body>
 </html>
