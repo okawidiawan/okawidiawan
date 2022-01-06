@@ -8,5 +8,6 @@ export function close() {
       element.classList.toggle(`rotate-${index + 1}`);
     });
     menuBar.classList.toggle("show");
+    document.body.classList.toggle("no-scroll");
   });
 }
