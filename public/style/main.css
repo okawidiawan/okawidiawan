@@ -55,8 +55,8 @@ header .container {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 30px 80vh 30px;
-      grid-template-rows: 30px 80vh 30px;
+  -ms-grid-rows: 30px 80vh;
+      grid-template-rows: 30px 80vh;
   justify-items: center;
 }
 
