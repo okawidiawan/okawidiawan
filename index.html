@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="public/style/main.css" />
-    <title>Oka Widiawan Website</title>
+    <title>Oka Widiawan - Website</title>
   </head>
   <body class="">
     <header>
@@ -41,25 +42,27 @@
           <ul class="navlinks">
             <li class="navlink">
               <a href="https://github.com/okawidiawan" target="_blank"><i class="bi bi-git"></i></a>
-              <!-- <p>Github</p> -->
             </li>
             <li class="navlink">
               <a href="mailto:oka.widiawan@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-              <!-- <p>Email</p> -->
             </li>
             <li class="navlink">
               <a href="https://api.whatsapp.com/send?phone=6285692598452" target="_blank"><i class="bi bi-phone-fill"></i></a>
-              <!-- <p>Whatsapp</p> -->
             </li>
           </ul>
         </main>
+
+        <div class="dark-mode-toggle" id="dark-mode-toggle">
+          <i class="darkIcon bi bi-lightbulb"></i>
+        </div>
 
         <section id="about" class="about hidden">test</section>
       </div>
     </header>
     <script type="module">
-      import { close } from "./public/script/index.js";
+      import { close, darkMode } from "./public/script/index.js";
       close();
+      darkMode();
     </script>
   </body>
 </html>
