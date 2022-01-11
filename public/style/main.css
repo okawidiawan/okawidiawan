@@ -5,14 +5,15 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   background-color: #ffffff;
-  overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Quicksand";
+  overflow: hidden;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
       grid-template-rows: 50px 2fr 50px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  overflow: hidden;
 }
 
 .container nav {
@@ -163,10 +165,10 @@ body {
 .container .bottomBar .menu-toggle {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10px 10px;
-      grid-template-columns: 10px 10px;
-  -ms-grid-rows: 10px 10px;
-      grid-template-rows: 10px 10px;
+  -ms-grid-columns: 14px 14px;
+      grid-template-columns: 14px 14px;
+  -ms-grid-rows: 14px 14px;
+      grid-template-rows: 14px 14px;
   place-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -175,8 +177,8 @@ body {
 
 .container .bottomBar .menu-toggle span {
   background-color: #3e4154;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;

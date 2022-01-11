@@ -10,13 +10,14 @@ $lightblue: #31e1d6;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   background-color: $pure-white;
-  overflow: hidden;
   transition: 0.5s;
   font-family: "Quicksand";
+  overflow: hidden;
 }
 
 .container {
@@ -24,7 +25,7 @@ body {
   display: grid;
   grid-template-rows: 50px 2fr 50px;
   grid-template-columns: 1fr;
-
+  overflow: hidden;
   nav {
     display: flex;
     justify-content: center;
@@ -112,15 +113,15 @@ body {
     border-top: 1px solid fade-out(black, 0.9);
     .menu-toggle {
       display: grid;
-      grid-template-columns: 10px 10px;
-      grid-template-rows: 10px 10px;
+      grid-template-columns: 14px 14px;
+      grid-template-rows: 14px 14px;
       place-items: center;
       transition: 0.5s;
       cursor: pointer;
       span {
         background-color: $main-color;
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         transition: 0.5s;
       }
