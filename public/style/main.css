@@ -20,8 +20,8 @@ body {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 60px 2fr 60px;
-      grid-template-rows: 60px 2fr 60px;
+  -ms-grid-rows: 10vh 80vh 10vh;
+      grid-template-rows: 10vh 80vh 10vh;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   overflow: hidden;
@@ -168,7 +168,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .container .bottomBar .menu-toggle {
@@ -193,12 +192,7 @@ body {
   transition: 0.5s;
 }
 
-.container .bottomBar .menu-toggle:hover span {
-  background-color: #31e1d6;
-}
-
 .container .bottomBar .navBot {
-  position: fixed;
   bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,8 +251,8 @@ body {
 }
 
 .container .bottomBar .navBot .navBotLink.show {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .hidden {
